@@ -2,8 +2,9 @@ import { useState } from "react";
 import { MdOutlineEmail } from "react-icons/md";
 import { RiLockPasswordLine } from "react-icons/ri";
 import { FaUserAlt, FaPhoneAlt  } from "react-icons/fa";
-import axios from 'axios';
 import { useNavigate } from "react-router-dom";
+import axios from 'axios';
+
 
 
 export default function Login() {

@@ -1,7 +1,14 @@
 import './MainPage.css';
 import { FaUserCircle } from "react-icons/fa";
+import { useNavigate } from 'react-router-dom';
 
 export default function MainPage() {
+
+    const navigate = useNavigate();
+
+    const handleClick = () => {
+        navigate('/account');
+    }
 
     return(
         <div className="main-page-container">
@@ -17,7 +24,7 @@ export default function MainPage() {
                     </nav>
                 </div>
 
-                <a href="#">{<FaUserCircle size={40}/>}</a>
+                <a className='user' href="#" onClick={handleClick}>{<FaUserCircle size={40}/>}</a>
                 
             </div>
             <div className="main-area">
