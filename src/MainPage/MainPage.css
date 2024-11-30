@@ -3,6 +3,14 @@
     font-weight: bolder;
 }
 
+body {
+  height: 100vh;
+  background-image: url('/src/assets/home-back.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
